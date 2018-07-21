@@ -1,0 +1,41 @@
+main {
+    position: sticky;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 1.5% 5%;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.viewLive, .viewGithub {
+    margin: 4%;
+}
+
+.project {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2.5% 5%;
+    color: white;
+}
+
+#project001 {
+    background: tomato;
+}
+
+#project002 {
+    background: seagreen;
+}
+
+#project003 {
+    background: rebeccapurple;
+}
