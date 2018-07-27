@@ -1,15 +1,18 @@
+@font-face { font-family: Nasa; src: url('../assets/resources/Nasa.ttf'); }
+
 // variables
 
 // fonts
-$heading-font: 'PT Sans', sans-serif;
-$body-font: 'Inconsolata', monospace;
+$primary-heading-font: Nasa, sans-serif;
+$heading-font: 'Do Hyeon', sans-serif;
+$body-font: 'Spectral SC', serif;
 
 // colors
-$primary-color: paleturquoise;
-$secondary-color: steelblue;
-$alt-color: firebrick;
-$black: darkslategray;
-$white: whitesmoke;
+$primary-color: #fc3d21;
+$secondary-color: #0b3d91;
+$alt-color: #87CEEB;
+$black: #1c1e2f;
+$white: #f5f5f5;
 
 /* media breakpoints */
 $laptop : 1000px;

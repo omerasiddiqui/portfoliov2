@@ -12,16 +12,11 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
     clip: rect(1px, 1px, 1px, 1px);
 }
 
-.wrapper {
+.inner-wrapper {
     margin: 0 auto;
     width: 80%;
     max-width: 1080px;
   }
-
-body {
-    display: flex;
-    flex-direction: column;
-}
 
 ul {
     list-style: none;
@@ -35,4 +30,8 @@ h1, h2, h3, h4 {
 
 p, a {
     font-family: $body-font;
+}
+
+a {
+    text-decoration: none;
 }
