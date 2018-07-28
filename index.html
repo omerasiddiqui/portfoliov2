@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Spectral+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="assets/resources/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Omer Siddiqui</title>
@@ -14,25 +15,11 @@
     <header id="home">
         <nav>
             <ul class="navigation-primary">
-                <li class="wow animated flip"><a href="#">Home</a></li>
-                <li class="wow animated flip" data-wow-delay="0.3s"><a href="#about">About</a></li>
-                <li class="wow animated flip" data-wow-delay="0.6s"><a href="#projects">Projects</a></li>
-                <li class="wow animated flip" data-wow-delay="0.9s"><a href="#contact">Contact</a></li>
+                <li class="smooth wow animated bounceInLeft"><a href="#">Home</a></li>
+                <li class="smooth wow animated bounceInLeft" data-wow-delay="0.5s"><a href="#about">About</a></li>
+                <li class="smooth wow animated bounceInLeft" data-wow-delay="1.0s"><a href="#project-header">Projects</a></li>
+                <li class="smooth wow animated bounceInLeft" data-wow-delay="1.5s"><a href="#contact">Contact</a></li>
             </ul>
-            <!-- <ul class="social-nav">
-                    <li>
-                        <a target="_blank" href="https://github.com/omerasiddiqui"><img src="assets/images/github.svg" alt="github"></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/omerasiddiqui/"><img src="assets/images/linkedin.svg" alt="linkedin"></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.visualcv.com/omer-siddiqui"><img src="assets/images/cv.svg" alt="cv"></a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.instagram.com/omerskywalker/"><img src="assets/images/instagram.svg" alt="instagram"></a>
-                    </li>
-                </ul> -->
         </nav>
         <div class="inner-wrapper">
             <h1 class="header-primary">Omer</h1>
@@ -47,7 +34,41 @@
             <div class="about">
                 <h2 class="header-text">About Me</h2>
                 <h4 class="section-subheader">who am i?</h4>
-                <p class="about-text inner-wrapper wow animated slideInUp" data-wow-offset="20" data-wow-delay="0.3s">Hello, I’m Omer Siddiqui -  a team player with an eye for design and appreciation for detail. I enjoy creating beautiful and functional websites and applications. I am passionate about the ever-evolving field of web development. I try to learn something new every day to add to my skill set. When I’m not busy creating sick websites, you can catch me reading or running.</p>
+                <p class="about-text inner-wrapper wow animated slideInUp" data-wow-delay="0.3s">Hello, I’m Omer Siddiqui -  a team player with an eye for design and appreciation for detail. I enjoy creating beautiful and functional websites and applications. I am passionate about the ever-evolving field of web development. I try to learn something new every day to add to my <span id="modal-open">skill set</span>. When I’m not busy creating sick websites, you can catch me reading or running.
+                    <div id="skills" class="modal visually-hidden">
+                            <div class="skillcard-icon">
+                                <i class="devicon-html5-plain-wordmark"></i>
+                            </div>
+                            <div class="skillcard-icon">
+                                    <i class="devicon-css3-plain-wordmark"></i>
+                            </div>
+                            <div class="skillcard-icon">
+                                    <i class="devicon-javascript-plain"></i>
+                            </div>
+                            <div class="skillcard-icon">
+                                    <i class="devicon-sass-original"></i>
+                            </div>
+                            <div class="skillcard-icon">
+                                    <i class="devicon-gulp-plain"></i>
+                            </div>
+                            <div class="skillcard-icon">
+                                    <i class="devicon-git-plain-wordmark"></i>
+                            </div>
+                            <div class="skillcard-icon">
+                                    <i class="devicon-bootstrap-plain-wordmark"></i>
+                                </div>
+                            <div class="skillcard-icon">
+                                    <i class="devicon-jquery-plain-wordmark"></i>
+                            </div>
+                            <div class="skillcard-icon">
+                                    <i class="devicon-react-original-wordmark"></i>
+                            </div>
+                            <div class="close-out">
+                                <button id="modal-exit">close</button>
+                            </div>
+                        </div>
+                </p>
+                
             </div>
         </section>
 
@@ -74,11 +95,11 @@
                 <h4 class="project-header">Show Me What You Got</h4>
                 <a target="_blank" href="https://omerasiddiqui.github.io/Ipsum-Generator/"><img src="assets/images/ipsum.png" alt="project 02"></a>                <p>javascript // dom manipulation // responsive design</p>
             </div>
-            <div class="project project03 wow animated slideInUp">
+            <div class="project project03 wow animated slideInUp" data-wow-delay="0.3s">
                 <h4 class="project-header">Responsive PSD</h4>
                 <a target="_blank" href="https://omerasiddiqui.github.io/responsive-psd/"><img src="assets/images/responsive-psd.png" alt="project 03"></a>                <p> html + css // responsive design // psd conversion</p>
             </div>
-            <div class="project project04 wow animated slideInUp">
+            <div class="project project04 wow animated slideInUp" data-wow-delay="0.3s">
                 <h4 class="project-header">To Do App</h4>
                 <a target="_blank" href="https://omerasiddiqui.github.io/jQuery-toDo-app/"><img src="assets/images/todo.png" alt="project 04"></a>                <p>html + css // jquery // design</p>
             </div>
@@ -121,10 +142,24 @@
                                   <button type="submit" id="submit">Send</button>
                                 </p>
                               </form>
+                              <ul class="social-nav">
+                                    <li>
+                                        <a class="social-links" target="_blank" href="https://github.com/omerasiddiqui"><img src="assets/images/github.svg" alt="github"></a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links" target="_blank" href="https://www.linkedin.com/in/omerasiddiqui/"><img src="assets/images/linkedin.svg" alt="linkedin"></a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links" target="_blank" href="https://www.visualcv.com/omer-siddiqui"><img src="assets/images/cv.svg" alt="cv"></a>
+                                    </li>
+                                    <li>
+                                        <a class="social-links" target="_blank" href="https://www.instagram.com/omerskywalker/"><img src="assets/images/instagram.svg" alt="instagram"></a>
+                                    </li>
+                                </ul>
                             </div>
                           </div>
                         </div>
-                        <div class="wow zoomOutUp animated ship" data-wow-delay="2s">
+                        <div class="wow zoomOutUp animated ship" data-wow-delay="2.5s">
                             <img src="assets/images/deathstar2.png" alt="millenium falcon">
                         </div>
                       </section>
@@ -141,7 +176,9 @@
     <!-- footer ends -->
     <!-- load jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-    <!-- load TypeIt -->
+    <!-- load smoothScroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    <!-- load typeIt -->
     <script src="assets/resources/typeit.min.js" /></script>
     <!-- load wow.js -->
     <script src="assets/resources/wow.min.js"></script>

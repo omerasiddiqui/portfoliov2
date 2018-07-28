@@ -1,7 +1,6 @@
 #contact {
     position: relative;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../assets/images/space2.jpg);
-    // background: $alt-color;
     background-size: cover;
     background-repeat: no-repeat; 
     padding: 1px;
@@ -11,8 +10,6 @@
     align-items: center;
     .inner-wrapper {
         background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../assets/images/space2.jpg);
-        // height: 99%;
-        // width: 99%;
         background-color: $white;
         border-radius: 5px;
         padding: 2% 15%;
@@ -30,47 +27,44 @@
     top: 0;
     left: 0;
     width: 29%;
-    // transition: 1.5s ease;
     img {
         width: 100%;
-        // animation: fadeOut 6s;
-        // transition: 3s ease;
-        // &:hover {
-        //     width: 0%;
-        // }
     }
 }
 
-.fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
+.social-nav {
+  border-top: 3px solid $black;
+  padding-top: 5%;
+  display: flex;
+  margin-top: 5%;
+  li {
+      width: 50%;
+  }
+  img {
+      width: 25%;
+      padding-bottom: 5px;
+      border-bottom: 3px solid transparent;
+  }
 }
 
-@keyframes fadeOut {
-    0% {
-        width: 100%;
-    }
-
-    100% {
-        width: 0%;
-    }
+.social-links {
+  padding: 20% 20% 10%;
+  transition: 0.2s ease;
+  &:hover {
+     img {
+      border-bottom: 3px solid lighten($alt-color, 10);
+     } 
+  }
 }
+
+
 
 .container {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
-  }
-  
-//   #contact {
-//     opacity: 0;
-//   }
-  
-//   ul {
-//     list-style: none;
-//     padding: 0;
-//   }
+}
   
   .title {
     margin-bottom: 30px;
@@ -177,12 +171,7 @@
   
   input[name="name"], input[name="phone"] {
     width: 100%;
-  }
-  
-//   .top-line {
-//     display: flex;
-//     justify-content: space-between;
-//   }
+}
   
   .contact form button {
     font-family: $body-font;

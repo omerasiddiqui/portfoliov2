@@ -13,6 +13,7 @@
     align-items: center;
     border: 1px solid $primary-color;
     background: $white;
+    position: relative;
 }
 
 .section-subheader {
@@ -32,4 +33,48 @@
     letter-spacing: 1px;
 }
 
+#modal-open {
+    font-weight: bold;
+    text-decoration: underline;
+    color: darken($alt-color, 15);
+    cursor: pointer;
+}
+
+.modal {
+    width: 45%;
+    background: rgba(28, 30, 47, 0.9);
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 7px;
+}
+
+.skillcard-icon {
+    width: 33.3%;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.close-out {
+    padding: 2% 0;
+    background: rgba(135,206,235, 0.9);
+    width: 100%;
+    text-align: center;
+}
+
+
+#modal-exit {
+    padding: 9px 18px;
+    font-family: $body-font;
+    background: lighten($primary-color, 10);
+    color: $white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+        background: $primary-color;
+    }
+}
 

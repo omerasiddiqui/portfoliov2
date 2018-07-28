@@ -1,26 +1,63 @@
 /////////////////////////////////
-//        initialize WOW.js  ///
+//           wow.js          ///
 ///////////////////////////////
 
-new WOW().init();
+const wow = new WOW(
+    {
+        animateClass: 'animated',
+        offset: 30,
+        mobile: false,
+        live: false
+    }
+)
+
+wow.init();
 
 /////////////////////////////////
-//        typewriter         ///
+//        smooth scroll      ///
 ///////////////////////////////
 
-// new TypeIt('.type', {
-//     speed: 70
+$('.smooth a').smoothScroll({
+    offset: 15,
+    speed: 1000
+  });
+
+/////////////////////////////////
+//        shrinking nav      ///
+///////////////////////////////
+
+//   $(document).on("scroll", function(){
+//     if
+//   ($(document).scrollTop() > 650){
+//       $(".navigation-primary").addClass("shrink");
+//     }
+//     else
+//     {
+//         $("header").removeClass("shrink");
+//     }
+// });
+
+// $(document).scrollingElement.children.children.main.children
+
+// $(document).on("scroll", function() {
+//     if
+
 // })
-// .type('"Become a student of <span class="highlight">innovation</span>')
-// .pause(500)
-// .delete(10)
-// .pause(500)
-// .type('<span class="highlight">revision</span>')
-// .pause(500)
-// .delete(8)
-// .type('<span class="highlight">change</span>.')
-// .pause(500)
-// .type(' It is the only thing that will remain <span class="highlight">constant.</span>"')
 
+/////////////////////////////////
+//        skills modal       ///
+///////////////////////////////
 
-// “Become a student of <span class="highlight">change</span>. It is the only thing that will remain <span class="highlight">constant</span>.” -Anthony D'angelo
+const open = $('#modal-open');
+const close = $('#modal-exit');
+
+const skills = $('#skills');
+
+open.on("click", function() {
+    skills.removeClass('visually-hidden')
+})
+
+close.on("click", function() {
+    skills.addClass('visually-hidden')
+})
+
