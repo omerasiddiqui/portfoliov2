@@ -9,7 +9,7 @@ header {
 .header-text {
     text-align: center;
     letter-spacing: 5px;
-    margin: 0;
+    margin: 2% 0 0 0;
     color: $primary-color;
     font-family: $body-font;
     font-size: 5rem;
@@ -20,7 +20,7 @@ header {
 .header-primary {
     @extend .header-text;
     font-size: 12rem;
-    margin-top: 20%;
+    margin-top: 17.5%;
     text-shadow: 3px 2px 1px white;
     font-family: $primary-heading-font;
 }
@@ -32,18 +32,19 @@ header {
     li {
         padding: 10px 0;
        }
+    a {
+        color: white;
+        padding: 12px 24px;
+        font-size: 1.5rem;
+        transition: 0.3s ease;
+        &:hover {
+        background: #516eae;
+        }
     }
-   a {
-       color: white;
-       padding: 12px 24px;
-       font-size: 1.5rem;
-       transition: 0.3s ease;
-       &:hover {
-          background: #516eae;
-   }
 }
 
-header p {
+
+.header-secondary {
     color: white;
     font-family: $heading-font;
     font-size: 3.5rem;

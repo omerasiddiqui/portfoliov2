@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Spectral+SC" rel="stylesheet">
+    <link rel="stylesheet" href="assets/resources/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Omer Siddiqui</title>
 </head>
@@ -13,12 +14,10 @@
     <header id="home">
         <nav>
             <ul class="navigation-primary">
-                <li>
-                    <a href="#">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </li>
+                <li class="wow animated flip"><a href="#">Home</a></li>
+                <li class="wow animated flip" data-wow-delay="0.3s"><a href="#about">About</a></li>
+                <li class="wow animated flip" data-wow-delay="0.6s"><a href="#projects">Projects</a></li>
+                <li class="wow animated flip" data-wow-delay="0.9s"><a href="#contact">Contact</a></li>
             </ul>
             <!-- <ul class="social-nav">
                     <li>
@@ -37,7 +36,7 @@
         </nav>
         <div class="inner-wrapper">
             <h1 class="header-primary">Omer</h1>
-            <p>Front end developer based out of Houston.</p>
+            <h2 class="header-secondary">Front end developer based out of Houston</h2>
         </div>
     </header>
     <!-- header ends -->
@@ -45,19 +44,17 @@
     <main>
 
         <section id="about">
-            <div class="about about-left">
+            <div class="about">
                 <h2 class="header-text">About Me</h2>
                 <h4 class="section-subheader">who am i?</h4>
-                <p class="inner-wrapper">Hello, I’m Omer Siddiqui -  a team player with an eye for design and appreciation for detail. I enjoy creating beautiful and functional websites and applications. I am passionate about the ever-evolving field of web development. I try to learn something new every day to add to my skill set. When I’m not busy creating sick websites, you can catch me reading or running.</p>
+                <p class="about-text inner-wrapper wow animated slideInUp" data-wow-offset="20" data-wow-delay="0.3s">Hello, I’m Omer Siddiqui -  a team player with an eye for design and appreciation for detail. I enjoy creating beautiful and functional websites and applications. I am passionate about the ever-evolving field of web development. I try to learn something new every day to add to my skill set. When I’m not busy creating sick websites, you can catch me reading or running.</p>
             </div>
-            <!-- <div class="about about-right">
-                image from css background
-            </div> -->
         </section>
 
         <section id="break">
             <div class="inner-wrapper">
-                <h3>“Become a student of <span class="highlight">change</span>. It is the only thing that will remain <span class="highlight">constant</span>.” -Anthony D'angelo</h3>
+                <h3 class="wow type">“Become a student of <span class="highlight">change</span>. It is the only thing that will remain <span class="highlight">constant</span>.” -Anthony D'angelo
+                </h3>
             </div>
         </section>
 
@@ -67,31 +64,70 @@
         </section>
 
         <section id="projects">
-            <div class="project project01">
+            <div class="project project01 wow animated slideInUp" data-wow-delay="0.3s">
                 <h4 class="project-header">Character Rolodex</h4>
-                <img src="assets/images/rolodex.png" alt="project 01">
+                <a target="_blank" href="https://omerasiddiqui.github.io/character-rolodex/"><img src="assets/images/rolodex.png" alt="project 01"></a>
                 <p>javascript // dom manipulation // web api's</p>
+                <a target="_blank" href="" class="view-src">View SRC</a>
             </div>
-            <div class="project project02">
+            <div class="project project02 wow animated slideInUp" data-wow-delay="0.3s">
                 <h4 class="project-header">Show Me What You Got</h4>
-                <img src="assets/images/ipsum.png" alt="project 02">
-                <p>javascript // dom manipulation // responsive design</p>
+                <a target="_blank" href="https://omerasiddiqui.github.io/Ipsum-Generator/"><img src="assets/images/ipsum.png" alt="project 02"></a>                <p>javascript // dom manipulation // responsive design</p>
             </div>
-            <div class="project project03">
+            <div class="project project03 wow animated slideInUp">
                 <h4 class="project-header">Responsive PSD</h4>
-                <img src="assets/images/responsive-psd.png" alt="project 03">
-                <p> html + css // responsive design // psd conversion</p>
+                <a target="_blank" href="https://omerasiddiqui.github.io/responsive-psd/"><img src="assets/images/responsive-psd.png" alt="project 03"></a>                <p> html + css // responsive design // psd conversion</p>
             </div>
-            <div class="project project04">
+            <div class="project project04 wow animated slideInUp">
                 <h4 class="project-header">To Do App</h4>
-                <img src="assets/images/todo.png" alt="project 04">
-                <p>html + css // jquery // design</p>
+                <a target="_blank" href="https://omerasiddiqui.github.io/jQuery-toDo-app/"><img src="assets/images/todo.png" alt="project 04"></a>                <p>html + css // jquery // design</p>
             </div>
         </section>
 
         <section id="contact">
             <div class="inner-wrapper">
-                <h2 class="header-text">Contact Me</h2>
+                <h2 class="header-text">Contact</h2>
+                <h4 class="section-subheader">how to reach me?</h4>
+
+                <section>
+                        <div class="container contact-section wow animated slideInUp">
+                          <div class="wrapper">
+                            <div class="contact">
+                              <div class="alert">Your message has been sent!</div>
+                              <form id="contactForm" method="POST" action="http://www.focuspocus.io/magic/da9978c34bb2c033bc2d47ef76e39f96">
+                                <div class="top-line">
+                                  <p class="name-field">
+                                    <label>Name <span>*</span></label>
+                                    <input type="text" name="name" id="name" required>
+                                  </p>
+                                  <p class="phone-field">
+                                    <label>Phone</label>
+                                    <input type="text" name="phone" id="phone">
+                                  </p>
+                                </div>
+                                <p class="email-field">
+                                  <label>Email <span>*</span></label>
+                                  <input type="email" name="email" id="email" required>
+                                </p>
+                                <div class="invalid">
+                                  <p class="invalid">Please enter a valid email address</p>
+                                </div>
+                                <p class="message-field full">
+                                  <label>Message</label>
+                                  <textarea name="message" rows="5" id="message"></textarea>
+                                </p>
+                                <p class="required-field">Required field <span>*</span></p>
+                                <p class="submit-button">
+                                  <button type="submit" id="submit">Send</button>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="wow zoomOutUp animated ship" data-wow-delay="2s">
+                            <img src="assets/images/deathstar2.png" alt="millenium falcon">
+                        </div>
+                      </section>
             </div>
         </section>
         
@@ -105,6 +141,10 @@
     <!-- footer ends -->
     <!-- load jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <!-- load TypeIt -->
+    <script src="assets/resources/typeit.min.js" /></script>
+    <!-- load wow.js -->
+    <script src="assets/resources/wow.min.js"></script>
     <!-- load my scripts -->
     <script src="js/projects.js"></script>
     <script src="js/script.js"></script>

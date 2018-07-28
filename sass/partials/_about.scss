@@ -6,17 +6,6 @@
 }
 
 .about {
-    // width: 50%;
-}
-
-.about-right {
-    background: url(../assets/images/omer-headshot.jpg);
-    background-size: cover;
-    height: 100vh;
-    border: 1px solid $alt-color;
-}
-
-.about-left {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,14 +13,6 @@
     align-items: center;
     border: 1px solid $primary-color;
     background: $white;
-    p {
-        width: 60%;
-        border: 3px solid $black;
-        padding: 3%;
-        margin: 2% 0;
-        font-size: 1.5rem;
-        letter-spacing: 1px;
-    }
 }
 
 .section-subheader {
@@ -41,3 +22,14 @@
     font-family: $body-font;
     font-size: 2rem;
 }
+
+.about-text {
+    width: 60%;
+    border: 3px solid $black;
+    padding: 3%;
+    margin: 2% 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+
