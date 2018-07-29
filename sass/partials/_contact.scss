@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2%;
     .inner-wrapper {
         background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../assets/images/space2.jpg);
         background-color: $white;

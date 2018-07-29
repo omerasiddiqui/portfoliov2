@@ -54,10 +54,12 @@ const close = $('#modal-exit');
 const skills = $('#skills');
 
 open.on("click", function() {
-    skills.removeClass('visually-hidden')
+    skills.removeClass('visually-hidden zoomOutRight')
+    skills.addClass('animated zoomInLeft')
 })
 
 close.on("click", function() {
-    skills.addClass('visually-hidden')
+    skills.removeClass('zoomInLeft');
+    skills.addClass('zoomOutRight')
 })
 
