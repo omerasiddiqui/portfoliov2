@@ -29,15 +29,15 @@ $('.smooth a').smoothScroll({
 //   $(document).on("scroll", function(){
 //     if
 //   ($(document).scrollTop() > 650){
-//       $(".navigation-primary").addClass("shrink");
+//       $(".navigation-primary").addClass("fixed");
 //     }
 //     else
 //     {
-//         $("header").removeClass("shrink");
+//         $("navigation-primary").removeClass("fixed");
 //     }
 // });
 
-// $(document).scrollingElement.children.children.main.children
+// const el = $(document).scrollingElement.children.children.main
 
 // $(document).on("scroll", function() {
 //     if
@@ -54,12 +54,13 @@ const close = $('#modal-exit');
 const skills = $('#skills');
 
 open.on("click", function() {
-    skills.removeClass('visually-hidden zoomOutRight')
-    skills.addClass('animated zoomInLeft')
+    skills.removeClass('visually-hidden zoomOutRight').addClass('animated zoomInLeft');
 })
 
 close.on("click", function() {
-    skills.removeClass('zoomInLeft');
-    skills.addClass('zoomOutRight')
+    skills.removeClass('zoomInLeft').addClass('animated zoomOutRight');
+    setTimeout(function() {
+        skills.addClass('visually-hidden');
+    }, 700)
 })
 

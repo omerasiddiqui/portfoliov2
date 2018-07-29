@@ -1,28 +1,9 @@
-header {
+#home {
     background: url(../assets/images/space3.jpg);
     background-size: cover;
     padding: 1px;
     height: 100vh;
     position: sticky;
-}
-
-.header-text {
-    text-align: center;
-    letter-spacing: 5px;
-    margin: 2% 0 0 0;
-    color: $primary-color;
-    font-family: $body-font;
-    font-size: 5rem;
-    font-weight: bold;
-    text-shadow: 3px 3px 1px $black;
-}
-
-.header-primary {
-    @extend .header-text;
-    font-size: 12rem;
-    margin-top: 17.5%;
-    text-shadow: 3px 2px 1px white;
-    font-family: $primary-heading-font;
 }
 
 .navigation-primary {
@@ -44,6 +25,24 @@ header {
     }
 }
 
+.header-text {
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 2% 0 0 0;
+    color: $primary-color;
+    font-family: $body-font;
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 1px $black;
+}
+
+.header-primary {
+    @extend .header-text;
+    font-size: 12rem;
+    margin-top: 17.5%;
+    text-shadow: 3px 2px 1px white;
+    font-family: $primary-heading-font;
+}
 
 .header-secondary {
     color: white;
@@ -54,7 +53,10 @@ header {
     margin: 0;
 }
 
-.shrink {
+
+// experimental
+
+.fixed {
     position: fixed;
     background: rgba(255,255,255, 0.1)
 }

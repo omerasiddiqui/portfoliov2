@@ -187,12 +187,27 @@ p, a {
 a {
   text-decoration: none; }
 
-header {
+#home {
   background: url(../assets/images/space3.jpg);
   background-size: cover;
   padding: 1px;
   height: 100vh;
   position: sticky; }
+
+.navigation-primary {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .navigation-primary li {
+    padding: 10px 0;
+    opacity: 1; }
+  .navigation-primary a {
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    transition: 0.3s ease; }
+    .navigation-primary a:hover {
+      background: #516eae; }
 
 .header-text, .header-primary {
   text-align: center;
@@ -210,21 +225,6 @@ header {
   text-shadow: 3px 2px 1px white;
   font-family: Nasa, sans-serif; }
 
-.navigation-primary {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; }
-  .navigation-primary li {
-    padding: 10px 0;
-    opacity: 1; }
-  .navigation-primary a {
-    color: white;
-    padding: 12px 24px;
-    font-size: 1.5rem;
-    transition: 0.3s ease; }
-    .navigation-primary a:hover {
-      background: #516eae; }
-
 .header-secondary {
   color: white;
   font-family: "Do Hyeon", sans-serif;
@@ -233,7 +233,7 @@ header {
   text-shadow: 3px 3px 1px #0b3d91;
   margin: 0; }
 
-.shrink {
+.fixed {
   position: fixed;
   background: rgba(255, 255, 255, 0.1); }
 
@@ -241,6 +241,22 @@ header {
   display: flex; }
   #about .header-text, #about .header-primary {
     margin-top: 2%; }
+
+#modal-open {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #45b3e0;
+  cursor: pointer; }
+
+#modal-exit {
+  padding: 9px 18px;
+  font-family: "Spectral SC", serif;
+  background: #fd6953;
+  color: #f5f5f5;
+  cursor: pointer;
+  transition: 0.3s ease; }
+  #modal-exit:hover {
+    background: #fc3d21; }
 
 .about {
   width: 100%;
@@ -267,43 +283,36 @@ header {
   font-size: 1.5rem;
   letter-spacing: 1px; }
 
-#modal-open {
-  font-weight: bold;
-  text-decoration: underline;
-  color: #45b3e0;
-  cursor: pointer; }
-
 .modal {
-  width: 45%;
-  background: rgba(28, 30, 47, 0.9);
-  position: absolute;
-  bottom: 60px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 7px; }
+  padding-top: 7px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(28, 30, 47, 0.9); }
 
 .skillcard-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 33.3%;
   font-size: 4rem;
   text-align: center;
   color: white; }
 
 .close-out {
-  padding: 2% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   background: rgba(135, 206, 235, 0.9);
   width: 100%;
   text-align: center; }
-
-#modal-exit {
-  padding: 9px 18px;
-  font-family: "Spectral SC", serif;
-  background: #fd6953;
-  color: #f5f5f5;
-  cursor: pointer;
-  transition: 0.3s ease; }
-  #modal-exit:hover {
-    background: #fc3d21; }
 
 #break {
   display: flex;
