@@ -293,7 +293,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #63f9c5;
   background: url(../assets/images/darkness.png);
   position: relative; }
 
@@ -370,13 +369,13 @@ a {
   justify-content: flex-start;
   flex-wrap: wrap;
   text-align: center;
-  background: black;
+  background: url(../assets/images/darkness.png);
   background-size: covers;
   padding-bottom: 2%; }
 
 #project-header {
   padding-top: 5%;
-  background: black;
+  background: url(../assets/images/darkness.png);
   padding: 1px;
   text-align: center; }
   #project-header .header-text, #project-header .header-primary {

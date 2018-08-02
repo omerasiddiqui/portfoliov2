@@ -4,8 +4,8 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     text-align: center;
-    // background: url(../assets/images/darkness.png);
-    background: black;
+    background: url(../assets/images/darkness.png);
+    // background: black;
     background-size: covers;
     padding-bottom: 2%;
     // border: 5px solid $primary-color;
@@ -14,8 +14,8 @@
 
 #project-header {
     padding-top: 5%;
-    // background: url(../assets/images/darkness.png);
-    background: black;
+    background: url(../assets/images/darkness.png);
+    // background: black;
     padding: 1px;
     text-align: center;
     .header-text {
