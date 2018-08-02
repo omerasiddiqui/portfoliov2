@@ -47,6 +47,8 @@
     border-bottom: 5px double $white;
     display: inline-block;
     text-transform: capitalize;
+    animation: colorChange 6s alternate infinite;
+
 }
 
 .view-src {
