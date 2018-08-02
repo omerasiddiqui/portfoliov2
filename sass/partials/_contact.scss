@@ -1,8 +1,6 @@
 #contact {
     position: relative;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../assets/images/space2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; 
+    background: url(../assets/images/darkness.png);
     padding: 1px;
     text-align: center;
     display: flex;
@@ -10,13 +8,16 @@
     align-items: center;
     padding-bottom: 2%;
     .inner-wrapper {
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../assets/images/space2.jpg);
-        background-color: $white;
+        background: black;;
+        // background-color: $white;
+        border: 1px solid $primary-color;
         border-radius: 5px;
         padding: 2% 15%;
     }
     .header-text {
-        text-shadow: 2px 2px 1px lightgrey;
+        // text-shadow: 2px 2px 1px lightgrey;
+        margin: 0;
+        padding-bottom: 2%;
     }
     .section-subheader {
         color: $white;
@@ -41,11 +42,15 @@
   li {
       width: 50%;
   }
+  p {
+    font-size: 0.5rem;
+  }
   img {
       width: 25%;
       padding-bottom: 5px;
       border-bottom: 3px solid transparent;
   }
+  
 }
 
 .social-links {
@@ -61,7 +66,7 @@
 
 
 .container {
-    max-width: 700px;
+    // max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
@@ -136,7 +141,7 @@
     font-family: $heading-font;
     font-weight: 400;
     font-size: 1.8rem;
-    color: #5dc3f2;
+    color: darken($primary-color, 10);
     text-align: center;
     letter-spacing: 2px;
   }
@@ -179,7 +184,7 @@
     font-weight: 400;
     font-size: 1.2rem;
     color: #fff;
-    background: $alt-color;
+    background: darken($primary-color, 10);
     width: 90px;
     height: 35px;
     border: 0;
@@ -192,7 +197,7 @@
   }
   
   .contact form button:hover, .contact form button:focus {
-    background: darken($alt-color, 20);
+    background: darken($primary-color, 20);
     color: #fff;
     outline: 0;
     transition: background-color 0.3s ease-out;
@@ -200,7 +205,7 @@
   
   .required-field {
     font-weight: 200;
-    color: rgba(74, 86, 96, 0.75);
+    color: rgba(14, 255, 179, 0.703);
     align-self: center;
     justify-self: start;
     padding: 3% 0;
@@ -214,7 +219,7 @@
   .alert {
     margin-bottom: 1em;
     padding: 10px;
-    background: #49b0e7;
+    background: $black;
     font-family: 'Mukta Mahee', sans-serif;
     font-size: 14px;
     text-align: center;
@@ -231,49 +236,94 @@
   .invalid {
     display: none;
   }
+
+  @media (max-width: $small-screen){
+    #contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .inner-wrapper {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+      .container {
+        width: 100vw;
+      }
+    }
+    .social-nav {
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      p {
+        font-size: 0.7rem;
+      }
+    }
+    .social-links {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  
+  @media (min-width: $small-landscape-screen){
+  
+  }
+  
+  @media (min-width: medium-screen){
+  
+  }
+  
+  @media (min-width: $large-screen){
+      
+  }
   
   
-//   /* LARGE SCREENS */
+  // /* LARGE SCREENS */
   
-//   @media (min-width: 500px) {
-//     #contactForm {
-//       grid-template-columns: 1fr 1fr;
-//       grid-template-areas:
-//         'name company'
-//         'email phone'
-//         'message message';
-//     }
+  // @media (min-width: 500px) {
+  //   #contactForm {
+  //     grid-template-columns: 1fr 1fr;
+  //     grid-template-areas:
+  //       'name company'
+  //       'email phone'
+  //       'message message';
+  //   }
   
-//     .name-field {
-//       grid-area: name;
-//       grid-column: 1 / 2;
-//       grid-row: 1 / 2;
-//     }
+  //   .name-field {
+  //     grid-area: name;
+  //     grid-column: 1 / 2;
+  //     grid-row: 1 / 2;
+  //   }
   
-//     .email-field {
-//       grid-area: email;
-//       grid-column: 1 / 2;
-//     }
+  //   .email-field {
+  //     grid-area: email;
+  //     grid-column: 1 / 2;
+  //   }
   
-//     .company-field {
-//       grid-area: company;
-//       grid-column: 2 / 3;
-//     }
+  //   .company-field {
+  //     grid-area: company;
+  //     grid-column: 2 / 3;
+  //   }
   
-//     .phone-field {
-//       grid-area: phone;
-//       grid-column: 2 / 3;
-//     }
+  //   .phone-field {
+  //     grid-area: phone;
+  //     grid-column: 2 / 3;
+  //   }
   
-//     .message-field {
-//       grid-area: message;
-//       grid-column: 1 / 3;
-//     }
-//   }
+  //   .message-field {
+  //     grid-area: message;
+  //     grid-column: 1 / 3;
+  //   }
+  // }
   
-//   @media (max-width: $mobile) {
-//     #contact .wrapper {
-//       width: 85%;
-//     }
+  // @media (max-width: $mobile) {
+  //   #contact .wrapper {
+  //     width: 85%;
+  //   }
   
-//   }
+  // }

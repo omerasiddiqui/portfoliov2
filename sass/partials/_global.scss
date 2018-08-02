@@ -1,20 +1,36 @@
-@font-face { font-family: Nasa; src: url('../assets/resources/Nasa.ttf'); }
-
 // variables
 
 // fonts
-$primary-heading-font: Nasa, sans-serif;
-$heading-font: 'Do Hyeon', sans-serif;
-$body-font: 'Spectral SC', serif;
+$heading-font: 'Playfair Display', serif;
+$body-font: 'Roboto', sans-serif;
+
+$test: 'Playfair Display', serif;
 
 // colors
-$primary-color: #fc3d21;
-$secondary-color: #0b3d91;
+$primary-color: #63f9c5;
+$secondary-color: #bd5bff;
 $alt-color: #87CEEB;
 $black: #1c1e2f;
 $white: #f5f5f5;
 
 /* media breakpoints */
-$laptop : 1000px;
-$tablet : 800px;
-$mobile : 480px;
+$small-screen : 320px;
+$small-landscape-screen : 480px;
+$medium-screen : 768px;
+$large-screen: 1000px;
+
+// @media (min-width: $small-screen){
+
+// }
+
+// @media (min-width: $small-landscape-screen){
+
+// }
+
+// @media (min-width: medium-screen){
+
+// }
+
+// @media (min-width: $large-screen){
+    
+// }
