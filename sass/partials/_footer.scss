@@ -19,21 +19,19 @@
     color: $white;
 }
 
-// @media (max-width: $small-screen){
-// #footer {
-//     text-align: center;
-//     font-size: 0.7rem;
-// }
-// }
+// media queries
 
-// @media (min-width: $small-landscape-screen){
-
-// }
-
-// @media (min-width: medium-screen){
-
-// }
-
-// @media (min-width: $large-screen){
+@media (max-width: $large-screen) {
     
-// }
+}
+
+@media (max-width: $medium-screen){
+
+}
+
+@media (max-width: $small-screen){
+#footer {
+    text-align: center;
+    font-size: 0.7rem;
+}
+}

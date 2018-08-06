@@ -15,12 +15,9 @@
 #project-header {
     padding-top: 5%;
     background: url(../assets/images/darkness.png);
-    // background: black;
     padding: 1px;
     text-align: center;
     .header-text {
-        // color: $white;
-        // text-shadow: 3px 3px 2px $primary-color;
         padding-bottom: 5px;
     }
 }
@@ -47,8 +44,16 @@
     border-bottom: 5px double $white;
     display: inline-block;
     text-transform: capitalize;
-    animation: colorChange 6s alternate infinite;
+    color: $primary-color;
+}
 
+#project-header:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 20px;
+    border-bottom: 3px double $primary-color;
 }
 
 .view-src {
@@ -67,39 +72,84 @@
     }
 }
 
-@media (max-width: $small-screen){
+// media queries
+
+@media (max-width: $large-screen){
+
+}
+
+@media (max-width: 750px) {
     #projects {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 0;
     }
+    .project {
+        width: 75%;
+    }
+    .view-src {
+        height: 10vh;
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 1.3rem;
+    }
+    .project p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: $medium-screen) {
+    #project-header .header-text {
+        margin-top: 10%;
+    }
+    .view-src {
+        width: 50%;
+    }
+    .project p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #project-header .header-text {
+        font-size: 3.0rem;
+    }
+}
+
+@media (max-width: $small-screen){
     .project-header {
         font-size: 1.5rem;
-        border-bottom: 3px double $black;
+        border-bottom: 3px double $white;
         margin: 5% 0;
     }
     .section-subheader {
         border: none;
     }
     .project {
-        width: 100%;
+        width: 95%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         &:nth-of-type(even) {
-            background: lighten($alt-color, 20);
+            background: rgba(255,255,255,0.1);
+            .view-src:hover {
+                background: transparent;
+            }
         }
     }
     .view-src {
         margin-bottom: 2%;
     }
-}
-
-@media (min-width: $small-landscape-screen){
-
-}
-
-@media (min-width: medium-screen){
-
-}
-
-@media (min-width: $large-screen){
-    
+    #project-header .header-text {
+        margin-top: 15%;
+    }
+    .project p {
+        font-size: 0.8rem;
+    }
 }

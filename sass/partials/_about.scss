@@ -15,12 +15,13 @@
 #modal-exit {
     padding: 9px 18px;
     font-family: $body-font;
-    background: lighten($primary-color, 10);
-    color: $white;
+    background: $white;
+    color: $black;
     cursor: pointer;
     transition: 0.3s ease;
     &:hover {
-        background: $primary-color;
+        background: $black;
+        color: $white;
     }
 }
 
@@ -37,13 +38,11 @@
 
 .about-text {
     width: 60%;
-    // border: 3px solid $black;
     padding: 0 3% 3%;
     font-size: 1.3rem;
-    letter-spacing: 1px;
     color: $white;
-    height: 35vh;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 1.55;
 }
 
 .modal {
@@ -52,12 +51,12 @@
     flex-wrap: wrap;
     padding-top: 7px;
     height: 100%;
-    width: 100%;
+    width: 50%;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 24.5vw;
     right: 0;
-    background: rgba(28, 30, 47, 0.9);
+    background: rgba(55, 55, 55, 0.9);
 }
 
 .skillcard-icon {
@@ -75,15 +74,47 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    background: rgba(135,206,235, 0.9);
+    background: rgba(21, 242, 198, 0.9);
     width: 100%;
     text-align: center;
+}
+
+@media (max-width: $large-screen){
+    #about {
+        height: 65vh;
+        .header-text {
+            margin-top: 0;
+        } 
+    }
+    .inner-wrapper {
+        width: 90%;
+    }
+    .about-text {
+        line-height: 1.45;
+    }
+    .modal {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media (max-width: $medium-screen) {
+
 }
 
 @media (max-width: $small-screen){
     .header-text {
         font-size: 3.0rem;
+        padding-top: 5%;
     }
+    #about {
+        height: 65vh;
+        .header-text {
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+    
     .section-subheader {
         font-size: 1.6rem;
     }
@@ -91,20 +122,10 @@
         width: 90%;
         font-size: 1rem;
         text-align: center;
+        line-height: 1.65;
     }
 }
 
-@media (min-width: $small-landscape-screen){
-
-}
-
-@media (min-width: medium-screen){
-
-}
-
-@media (min-width: $large-screen){
-    
-}
 
 
 

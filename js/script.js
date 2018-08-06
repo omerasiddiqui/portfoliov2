@@ -23,26 +23,31 @@ $('.smooth').smoothScroll({
   });
 
 /////////////////////////////////
-//        shrinking nav      ///
+//   remove hover on mobile  ///
 ///////////////////////////////
 
-//   $(document).on("scroll", function(){
-//     if
-//   ($(document).scrollTop() > 650){
-//       $(".navigation-primary").addClass("fixed");
-//     }
-//     else
-//     {
-//         $("navigation-primary").removeClass("fixed");
-//     }
-// });
+function hasTouch() {
+    return 'ontouchstart' in document.documentElement
+           || navigator.maxTouchPoints > 0
+           || navigator.msMaxTouchPoints > 0;
+}
 
-// const el = $(document).scrollingElement.children.children.main
+if (hasTouch()) { // remove all :hover stylesheets
+    try { // prevent exception on browsers not supporting DOM styleSheets properly
+        for (var si in document.styleSheets) {
+            var styleSheet = document.styleSheets[si];
+            if (!styleSheet.rules) continue;
 
-// $(document).on("scroll", function() {
-//     if
+            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                if (!styleSheet.rules[ri].selectorText) continue;
 
-// })
+                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                    styleSheet.deleteRule(ri);
+                }
+            }
+        }
+    } catch (ex) {}
+}
 
 /////////////////////////////////
 //        skills modal       ///
