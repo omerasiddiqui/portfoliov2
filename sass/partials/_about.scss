@@ -51,10 +51,10 @@
     flex-wrap: wrap;
     padding-top: 7px;
     height: 100%;
-    width: 50%;
+    width: 90%;
     position: absolute;
     bottom: 0;
-    left: 24.5vw;
+    left: 3vw;
     right: 0;
     background: rgba(55, 55, 55, 0.9);
 }
@@ -108,10 +108,10 @@
         padding-top: 5%;
     }
     #about {
-        height: 65vh;
+        height: 80vh;
         .header-text {
             padding-top: 0;
-            margin-top: 0;
+            margin-top: 15%;
         }
     }
     
@@ -123,6 +123,9 @@
         font-size: 1rem;
         text-align: center;
         line-height: 1.65;
+        p {
+            margin-bottom: 15%;
+        }
     }
 }
 

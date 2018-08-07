@@ -50,7 +50,6 @@
 }
 
 .hire .smooth {
-    // font-family: $heading-font;
     color: $primary-color;
     font-size: 1.5rem;
     padding: 1% 2%;
@@ -87,10 +86,13 @@
 .header-links .smooth {
     text-align: center;
     width: 48%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: $primary-color;
     padding: 10px;
     border: 2px solid $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover {
         background: rgba(255,255,255,0.2);
     }
@@ -146,9 +148,6 @@
         width: 90%;
     }
     .header-links .smooth {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 12vh;
     }
     .header-links {
@@ -162,6 +161,10 @@
 }
 
 @media (max-width: $medium-screen) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
     .header-primary {
         font-size: 4.7rem;
     }

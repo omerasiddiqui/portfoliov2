@@ -18,7 +18,7 @@ wow.init();
 ///////////////////////////////
 
 $('.smooth').smoothScroll({
-    offset: 5,
+    offset: -5,
     speed: 1000
   });
 
